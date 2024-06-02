@@ -192,11 +192,15 @@
                 @endif
             </div>
         </div>
+        @php
+            $set = \App\Models\Setting::get()->first();
+            $faqs = \App\Models\FAQ::get();
 
+        @endphp
         @include('layouts.homesidebar')
         
          @yield('content')
-         
+         @include('_pop-up')
         <!-- bottom tab -->
         <div class="bottomTabs fixed-bottom">
             <div class="container">

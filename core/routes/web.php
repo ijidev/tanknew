@@ -33,6 +33,7 @@ Route::middleware(['auth'])->group(function () {
     Route::controller(HomeController::class)->group(function () {
         Route::get('/home', 'index')->name('home');
         Route::get('/checkin', 'checkin')->name('checkin');
+        Route::get('/ref', 'ref')->name('ref');
         Route::get('/profile', 'profile')->name('profile');
         Route::get('/optimize', 'start')->name('start');
         Route::get('/review/{id}', 'review')->name('submit.review');

@@ -12,7 +12,7 @@
         <div class="profile d-flex align-items-center mb-4">
             <img src="{{ asset('homeasset/images/img/user.png') }}" class="rounded-circle mr-3" width="50" alt="Profile Picture">
             <div class="text-light">
-                <h5 class="mb-0">Steve <img src="{{auth::user()->tier->icon}}" width="20" alt=""></h5>
+                <h5 class="mb-0">{{Auth::user()->name}} <img src="{{auth::user()->tier->icon}}" width="20" alt=""></h5>
                 <small>Member ID: 595760</small>
             </div>
         </div>
@@ -36,7 +36,7 @@
                 <div class="gauge-container" id="gaugeContainer">
                     <div class="gauge" id="gauge">
                         <div class="gauge-content" id="gaugeContent">
-                            <h1 id="percentage">0%</h1>
+                            <h2 id="percentage">0%</h2>
                             <p>Credit Score</p>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
         <div class="menu row">
 
             <div class="col-6 mt-3">
-                <a href="" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/share.png') }}" width="20" alt=""> Member ID</a>
+                <a href="{{ route('ref') }}" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/share.png') }}" width="20" alt=""> Member ID</a>
             </div>
             <div class="col-6 mt-3 text-left">
                 <a href="#" id="eventModalBtn" class="btn btn-light  text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/event.png')}}" width="20" alt=""> Event</a>

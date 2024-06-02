@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="{{ asset('frontassets/login.css') }}">
   <link rel="stylesheet" href="{{ asset('frontassets/custom.css') }}">
   <link rel="stylesheet" href="{{ asset('/homeasset/css/style.css') }}">
+  {{-- <link rel="stylesheet" href="{{ asset('frontassets/custom.js') }}"> --}}
+
+
+
+
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
@@ -142,45 +147,6 @@
         </div>
  
 
-    <!--nav class="navbar sticky-top">
-        <a href="{{ route('home') }}">
-            <img src="{{ asset('homeasset/images/logo.png') }}" width="90" alt="logo">
-        </a>
-        <div id="my-nav" class="navbar-expand">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="{{ route('profile') }}"><i class="las la-user"></i></a>
-
-                    
-                </li>
-
-                <!--li>
-                    <a href="{{ route('logou') }}">
-                        Logout
-                    </a>
-                </li-->
-                
-            </ul>
-        </div>
-    </nav-->
-    
-        {{-- <nav>
-            <div class="container">
-                <div class="mainNav py-2">
-                    <a
-                        href="{{ route('home') }}"
-                        class="navbar-brand"
-                        style="text-decoration: none; color: white"
-                        >
-                        <img src="../homeasset/images/logo.png" alt="" class="logo" />
-                    </a>
-    
-                    <!--a href="{{ route('logou') }}"><i class=""></i>Logout</a-->
-                    <a href="{{ route('profile') }}"><i class="las la-user"></i></a>
-                </div>
-            </div>
-        </nav> --}}
-
         <nav>
             <div class="container">
                 <div class="mainNav py-2">
@@ -228,7 +194,10 @@
             @endif
         </div>
     </div>
-  
+    @php
+      $set = \App\Models\Setting::get()->first();
+      $faqs = \App\Models\FAQ::get();
+    @endphp
     <main class="container">
         <section style="    
         margin-top: 100px;
@@ -238,6 +207,7 @@
             @yield('content')
 
         </section>
+        @include('_pop-up')
     </main>
     
     <div class="bottomTabs fixed-bottom">
@@ -319,6 +289,8 @@
   </div>
 </body>
 <script src="{{ asset('frontassets/custom.js') }}"></script>
+<script src="{{ asset('frontassets/model.js') }}"></script>
+{{-- <script src="{{ asset('frontassets/custom.js') }}"></script> --}}
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -4,7 +4,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-5">
+        <div class="col-sm-10">
             
             <div class="card">
                 @if (session('success'))
@@ -16,7 +16,7 @@
                         {{ session('error') }}
                     </div>   
                 @endif
-                <div class="card-body text-white">
+                <div class="card-body">
                     
                     <div class="row p-3 text-center ">
                         {{-- <div class="col-4" style="border-right: solid 1px;">
@@ -49,9 +49,18 @@
                         <div class="input-group">
                             <input class="form-control" type="number" name="amount" placeholder="Withdrawl amount..." aria-label="Withdrawl amount" aria-describedby="my-addon">
                             <div class="input-group-append">
-                                <button type="submit" class="input-group-text btn btn-success text-white" id="my-addon">Request withdrawl</button>
+                                @if ($wallets->count() < 1)
+                                    <button type="submit" hidden class="input-group-text btn btn-success text-white" id="my-addon">Request withdrawl</button>
+                                @else
+                                    <button type="submit" class="input-group-text btn btn-success text-white" id="my-addon">Request withdrawl</button>
+                                @endif
                             </div>
                         </div>
+                        @if ($wallets->count() < 1)
+                            You do not have any payment methold activated please update your payment info to enable us disbust payment to you.
+                            <br>
+                            <a href="{{ route('info') }}" class="btn btn-danger" style="width:80%;">Bind Wallet</a>
+                        @endif
 
                     </form>
 

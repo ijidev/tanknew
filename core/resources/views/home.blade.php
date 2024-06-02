@@ -163,8 +163,8 @@
             </div>
         </div>
 
-        <div class=" row p-4 justify-content-center">
-          <div class="col-8">
+        <div class=" row ml-0 mr-0 p-4 justify-content-center">
+          <div class="col-sm-8">
             <img
               src="{{ asset('homeasset/images/BG-7.png') }}"
               class="img-flui"
@@ -179,6 +179,6 @@
         </div>
         
     </section>
- @include('_pop-up')
+    @include('_pop')
 @endsection
 

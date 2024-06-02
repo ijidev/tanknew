@@ -171,17 +171,7 @@ class HomeController extends Controller
 
     }
 
-    public function term()
-    {
-        return view('terms');
-    }
-
-    public function withdrawPas()
-    {
-        return view('withdraw-pass');
-    }
-
-     public function submit($id)
+    public function submit($id)
      {
         $user = Auth::user();
         
@@ -236,7 +226,7 @@ class HomeController extends Controller
 
             return redirect()->route('getstarted')->with('success', 'Product review submited successfuly ');
         }
-     }
+    }
 
     public function review(Request $request, $id)
     {
@@ -304,6 +294,23 @@ class HomeController extends Controller
         }
         
     }
+
+    public function ref()
+    {
+        return view('ref');
+    }
+
+
+    public function term()
+    {
+        return view('terms');
+    }
+
+    public function withdrawPas()
+    {
+        return view('withdraw-pass');
+    }
+
 
     public function deposit($id)
     {
