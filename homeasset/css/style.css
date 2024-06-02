@@ -1,0 +1,353 @@
+/***** landing page starts*****/
+
+* {
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+.everyThing {
+    /* background-color: rgb(1, 0, 18); */
+    background: #edf2ff;
+    /* background-image: url(../images/img/BG-sidebar.png); */
+    /* position: fixed; */
+    background-size: 100%;
+    /* background-position: bottom; */
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+    /* /* background-position: 0 0; */
+}
+
+.bottomTabs {
+    margin-bottom: 30px;
+    background-color: #112;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 50px;
+}
+
+.mainTabs {
+    display: flex;
+    align-content: center;
+    padding-top: 12px;
+    flex-wrap: nowrap;
+    gap: 150px;
+    justify-content: space-around;
+}
+
+.starting { 
+    position: absolute;
+    transform: translateY(-30%);
+}
+
+.starting img{ 
+    border-radius:100%;
+    width:60px;
+    height:60px;
+}
+
+.mainTabs p {
+    color: white;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    background-color: #112;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+    /* width: 90%; */
+    /* border-radius: 50px; */
+    /* margin-left: 5%; */
+    margin-top: 0px;
+}
+
+.ladyImg {
+    height: 150px;
+}
+
+.mainName {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.profilePic {
+    width: 60px;
+    height: 60px;
+}
+
+.main .lady {
+    position: absolute;
+    top: 10;
+    right: 0;
+    width: 160px;
+    /* height: 300px; */
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav a img{
+    
+    width: 120px;
+}
+
+.mainInfo {
+    /* background-color: #ffffff; */
+    background-image: url(../images/img/BG-sidebar.png);
+    /* position: fixed; */
+    background-size: 100%;
+    background-position: bottom;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    /* /* background-position: 0 0; */
+    padding: 30px 0px 10px 0;
+}
+
+.name {
+    color: rgb(0, 0, 0);
+}
+
+.welcome {
+    font-size: .8rem;
+}
+
+.content {
+    color: #0f16e0;
+}
+
+.welcomeMessage {
+    z-index: 4;
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 12px;
+    overflow: hidden;
+    align-items: center;
+    align-content: center;
+    background-color:rgb(4, 0, 42);
+    border-radius: 45px;
+    border: 1px solid rgb(30, 13, 175);
+    padding: 8px 12px;
+    padding-left: 0;
+    White-space: nowrap;
+}
+
+.mainMesssage {
+    margin: auto 0;
+    margin-left: 7px;
+    font-size: .8rem;
+    color: white;
+    font-weight: 500;
+    White-space: nowrap;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.bell {
+    background-color:rgb(4, 0, 42);
+    /* width: 30px; */
+    height: 15px;
+    z-index: 3;
+    padding-left: 15px;
+    padding-right: 4px;
+}
+
+
+.mainInfos {
+    padding: 15px 0;
+    display: flex;
+    /* background-color: #010012; */
+    margin: 20px 0 20px 0;
+    gap: 30px;    
+    overflow: auto;
+    justify-content: space-between;
+}
+
+.infos {
+    background-color: #0f16e0;
+    z-index: 2;
+}
+
+.info {
+    min-width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color:rgb(245, 245, 245);
+    border-radius: 8px;
+    gap: 5px;
+
+}
+
+.info p {
+    font-size: .7rem;
+}
+
+.las {
+    color: rgb(240, 26, 244);
+    font-size: 25px;
+}
+nav .las {
+    color: white;
+    font-size: 25px;
+}
+
+.info p {
+    color:rgb(99, 96, 96);
+}
+
+.levels {
+    /* background-color:rgb(255, 255, 255); */
+    padding: 10px 0;
+}
+
+.tires{
+    background: white;
+    padding: 20px 20px 50px;
+    border-radius: 20px;
+}
+
+.levelContain {
+    color: white;
+}
+
+
+.mainLevels {
+    display: flex;
+    color: #0f16e0;
+    overflow: auto;
+    gap: 10px;
+}
+
+.level {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: #ffffff;
+    background-color: #0f16e0;
+    min-width: 290px;
+    border: 1px solid rgb(30, 13, 175);
+    padding: 10px;
+}
+
+.level .crown {
+   /* width: 80px; */
+    margin: 8px 0 12px 0;
+    text-align:center;
+}
+
+.levelHeading{
+    color: #0f16e0;
+    text-align:center;
+}
+
+.level ul li {
+    font-size: .7rem;
+}
+
+   
+
+/*@media screen and (max-width: 980px) {*/
+    .mainMesssage {
+        /*white-space: nowrap;*/
+        animation: slide 20s infinite linear;
+    }
+/*}*/
+
+@keyframes slide {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+}
+
+/* Styles for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999999 !important;
+  left: 0;
+  top: 0;
+  width: 98%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: auto !important;
+}
+
+/* Styles for the modal content */
+.modal-content {
+  background-color:blue;
+  color:black;
+  margin: 15% auto;
+  overflow: auto !important;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  /* text-align: center; */
+  border-radius: 5px;
+  position: relative;
+} 
+
+/* Close button for the modal */
+.close {
+  position: absolute;
+  top: 0;
+  Color: white;
+  Background-color:red;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+/* public/css/styles.css */
+
+#product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+}
+
+.product {
+    width: 100%;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.rounded-button {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#middleButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}

@@ -1,0 +1,109 @@
+
+* {
+    font-family: sans-serif;
+    /* border: 1px solid red; */
+}
+
+.everything {
+    background-color:rgb(4, 0, 42);
+}
+
+.profilePic {
+    width: 60px;
+    height: 60px;
+}
+
+.bottomTabs {
+    background-color:rgb(1, 0, 18);
+}
+
+.mainTabs {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 10px
+}
+
+.starting { 
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.mainTabs p {
+    color: white;
+}
+
+nav {
+    background-color: rgb(1, 0, 18);
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav a img{
+    width: 120px;
+}
+
+.las {
+    color: rgb(240, 26, 244);
+    font-size: 25px;
+}
+
+.money {
+    background-color: rgb(1, 0, 18);
+
+}
+
+.secondary {
+    color: rgb(72, 70, 70);
+}
+
+.icon {
+    position: absolute;
+    color: white;
+}
+
+span {
+    color:rgb(240, 26, 244);
+}
+
+.notes {
+    background-color: rgb(1, 0, 18);
+}
+
+.draw {
+    background-color:rgb(1, 0, 18);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.item-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(4, 0, 42);
+    border-radius: 8px;
+}
+
+.center-button {
+    width: 70px;
+    height: 70px;
+}
+
+.item {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.rights {
+    margin-bottom: 45px;
+}

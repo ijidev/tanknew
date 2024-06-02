@@ -1,0 +1,101 @@
+
+
+
+
+/* .mainTabs p {
+    color: white;
+}
+
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainNav a img{
+    width: 120px;
+} */
+
+.las {
+    color: rgb(240, 26, 244);
+    font-size: 25px;
+}
+
+.money {
+    display:inline-block;
+    background-color: white;
+    color:black;
+}
+
+.money left{
+    position:relative;
+    float:left;
+}
+
+.digits .d-flex {
+    display: flex !important;
+    justify-content: space-around;
+}
+
+.money img{
+    padding-top:-30px;
+    padding-left:-20px;
+}
+
+.submission{
+    background:black;
+    padding :1px 0;
+}
+
+.secondary {
+    /* color: white; */
+}
+
+.icon {
+    position: absolute;
+    color: white;
+}
+
+span {
+    color:rgb(240, 26, 244);
+}
+
+.notes {
+    background-color: white;
+    color: #112;
+}
+
+.draw {
+    background-color:blue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.item-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    background-color: rgb(4, 0, 42);
+    border-radius: 8px;
+}
+
+.center-button {
+    width: 70px;
+    height: 70px;
+}
+
+.item {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.rights {
+    margin-bottom: 45px;
+}

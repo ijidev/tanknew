@@ -1,0 +1,110 @@
+
+* {
+    /* border: 1px solid red; */
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    /* background-image: url("../images/IMG_9037.PNG"); */
+}
+
+.mainBody img {
+    width: 250px;
+}
+
+.auth-heading {
+    text-align: center;
+    color: #0f16e0;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.inputs {
+    display: flex;
+    border-bottom: 1px solid white;
+}
+
+label {
+    font-size: .9rem;
+    font-weight: 600;
+    color: rgb(183, 180, 180);
+}
+
+form {
+    border-radius: 10px;
+    background-color: rgb(1, 0, 18);
+}
+
+
+.customInput, .form-control {
+    width: 100%;
+    color: white;
+    text-align: right;
+    background: transparent !important;
+    height: 30px;
+    padding: 5px 0 10px 0;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+    font-size: 13px !important;
+    border: none !important;
+    /* border-bottom: 1px solid whitesmoke; */
+    resize: none;
+    appearance: none !important;
+    outline: none !important;
+    -webkit-appearance: none !important;
+    transition: 0.3s all ease-in-out;
+}
+
+.formInputs .login{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 150px;
+    padding: 20px;
+    align-items: stretch;
+}
+
+.login {
+    color: white;
+    margin-top: 20px;
+    background:none;
+    border: none;
+}
+
+.las {
+    color: #0f16e0;
+    margin-top: -15px;
+    font-size: 45px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+#forgotPassword {
+    text-decoration: none;
+    color: rgb(119, 118, 118);
+}
+
+#register {
+    color: #0f16e0;
+}
+
+.rights {
+    text-align: center;
+    margin: 120px auto 0 auto;
+    font-weight: 500;
+    font-size: .8rem;
+    color: whitesmoke;
+}
