@@ -47,7 +47,7 @@
             </div>
                 
             <div class="text-center mt-4 mb-4">
-                <a href="{{ route('start') }}" class="btn " style="width:90%; border:solid 2px blue;">Start Now</a>
+                <a href="{{ route('start') }}" class="btn " style="width:50%; border:solid 2px blue;">Start Now</a>
             </div>
                 
             <div class="submission my-2 text-dark" >

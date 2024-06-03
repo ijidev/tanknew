@@ -2,7 +2,7 @@
     <div class="modal-content">
         <span class="close" id="certCloseBtn">&times;</span>
         <h2>Certificate</h2>
-        <!--img src="{{ asset($set->letter) }}" style="max-width:100%;border:0" alt="certificate"-->
+        <img src="{{ asset($set->letter) }}" style="max-width:100%;border:0" alt="certificate">
         <img src="{{ asset($set->cert) }}" style="max-width:100%;border:0" alt="certificate">
     </div>
 </div>
@@ -54,9 +54,9 @@
         <h2>Activity</h2>
         <hr>
         
-            <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/act1.png') }}" style="max-width:100%;border:0"></strong></span></span></p>
-            <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/act2.png') }}" style="max-width:100%;border:0"></strong></span></span></p>
-            <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/pop.png') }}" style="max-width:100%;border:0"></strong></span></span></p>
+            <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/img/event1.jpg') }}" style="max-width:100%;border:0"></strong></span></span></p>
+            <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/img/event2.jpg') }}" style="max-width:100%;border:0"></strong></span></span></p>
+            {{-- <img data-v-a75f7a08="" alt="" src="{{ asset('homeasset/images/pop.png') }}" style="max-width:100%;border:0"></strong></span></span></p> --}}
             
     </div>
 </div>

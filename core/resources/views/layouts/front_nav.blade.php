@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary main-navbar sticky">
+<nav class="navbar navbar-expand-lg bg-light main-navbar sticky">
     <div class="form-inline mr-auto">
       <ul class="navbar-nav mr-3">
         <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg
@@ -147,11 +147,11 @@
     </ul>
 </nav>
 {{-- {{ dd($notify)}} --}}
-<div class="main-sidebar sidebar-style-2 bg-primary">
+<div class="main-sidebar sidebar-style-2 bg-light">
     <aside id="sidebar-wrapper">
       <div class="sidebar-brand">
         <!--<a href="index.html"> <img alt="image" src="{{ asset('homeasset/images/logo.png') }}" width="100" class="header-logo" /> -->
-        <span class="logo-name text-white">ImpactMidsouth</span>
+        <span class="logo-name text-white">Tandnewmedia</span>
         </a>
       </div>
       <ul class="sidebar-menu">
