@@ -4,18 +4,18 @@
             <div class="mainBody">
                 <!-- Logo -->
                 <div class="logo w-100 d-flex">
-                    <img src="../homeasset/images/logo_light.png" alt="" class="mx-auto my-4">
+                    <img src="{{ asset('homeasset/images/img/tanknew-logo.png') }}" alt="" class="mx-auto my-4">
                 </div>
 
-                <!-- Main Text -->
-                <h1 class="auth-heading">Login Now</h1>
-
+                
                 <!-- main Login Section -->
                 <div class="mainLog row justify-content-center">
-                    <div class=" col-10">
+                    <div class=" col-sm-8">
                         
                         
                         <form method="POST" action="{{ route('login') }}" class="formInputs">
+                            <!-- Main Text -->
+                            <h1 class="auth-heading pt-3">Login Now</h1>
                             @csrf
                             <div class="login">
                                         @error('username')
@@ -72,11 +72,11 @@
                     @endif
                     <!-- Register -->
                     <small>Do not have an account? </small>
-                    <a href="{{ route('register') }}" class="signup">Signup</a>
+                    <a href="{{ route('register') }}" class="signup text-orange">Signup</a>
                 </div>
                
             </div>
             <!-- rights -->
-            <p class="rights"><i></i>2022 Site Scientist. All rights reserved</p>
+            <p class="rights"><i></i>2024 Site Tanknewmedia-data. All rights reserved</p>
         </div>
   @endsection

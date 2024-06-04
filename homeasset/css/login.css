@@ -4,6 +4,26 @@
     font-family: sans-serif;
 }
 
+
+main {
+    background: #edf2ff;
+    background-image: url(../images/img/BG-sidebar.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  
+  @media screen and (max-width: 500px) {
+    main {
+      background: #edf2ff;
+      background-image: url(../images/img/BG-sidebar.png);
+      /* position: fixed; */
+      background-size: 100%;
+      background-position: top;
+    }
+  }
+
 main {
     display: flex;
     flex-direction: column;
@@ -20,7 +40,7 @@ main {
 
 .auth-heading {
     text-align: center;
-    color: #0f16e0;
+    color: orange;
     font-size: 1.2rem;
     font-weight: 600;
 }
@@ -78,7 +98,7 @@ form {
 }
 
 .las {
-    color: #0f16e0;
+    color: orange;
     margin-top: -15px;
     font-size: 45px;
 }
@@ -98,7 +118,7 @@ form {
 }
 
 #register {
-    color: #0f16e0;
+    color: orange;
 }
 
 .rights {

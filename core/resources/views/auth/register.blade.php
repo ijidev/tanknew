@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../homeasset/css/register.css">
-    <link rel="stylesheet" href="../homeasset/css/login.css">
-    <link rel="stylesheet" href="../homeasset/css/style.css">
-    <link rel="stylesheet" href="../homeasset/libraries/bootstrap.min.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
-      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="{{ asset('homeasset/css/register.css') }}">
+    <link rel="stylesheet" href="{{ asset('homeasset/css/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('homeasset/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('homeasset/libraries/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <main>
@@ -23,16 +17,16 @@
             <div class="mainBody">
                 <!-- Logo -->
                 <div class="logo w-100 d-flex">
-                    <img src="../homeasset/images/logo_light.png" alt="" class="mx-auto my-4">
+                    <img src="{{ asset('homeasset/images/img/tanknew-logo.png') }}" alt="" class="mx-auto my-4">
                 </div> 
 
-                <!-- Main Text -->
-                <h1 class="auth-heading">Register Now</h1>
-
+                
                 <!-- main Login Section -->
                 <div class="row justify-content-center">
-                    <div class=" col-10">
+                    <div class=" col-sm-8">
                         <form method="POST" action="{{ route('register') }}" class="formInputs">
+                            <!-- Main Text -->
+                            <h1 class="auth-heading">Register Now</h1>
                             @csrf
                             <div class="inputs">
                                 <label for="username" class="">Username</label>
@@ -139,24 +133,24 @@
                                 @enderror
                             </div>
                             
-                            <div class="TandC d-flex gap-2">
+                            {{-- <div class="TandC d-flex gap-2">
                                 <input
                                 id="Male"
                                 type="radio"
                                 required
                                 />
                                 <label for="Male" class="">I agree with <a href="https://impactmidsouthreviews.com/terms" class="signup"> Terms & Policy </a></label>
-                            </div>
+                            </div> --}}
                             <button class="login" type="submit">
                                 <i class="las la-arrow-circle-right" aria-hidden="true"></i>
                             </button>
+                            <div class="links">
+                                <a href="{{ route('login') }}" id="backToLogin">Already have an account? Login</a>
+                            </div>
                         </form>
                     </div>
                 </div>
                 
-                <div class="links">
-                    <a href="http://impactmidsouthreviews.com/login" id="backToLogin">Back to Login</a>
-                </div>
                
             </div>
         </div>

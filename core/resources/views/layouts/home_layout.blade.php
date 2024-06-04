@@ -158,7 +158,7 @@
                         class="navbar-brand"
                         style="text-decoration: none; color: white"
                         >
-                        <img src="{{ asset('/homeasset/images/img/tanknew-logo.png') }}" alt="" class="logo" />
+                        <img src="{{ asset('/homeasset/images/img/logo.png') }}" alt="" class="logo" />
                     </a>
     
                     <!--a href="{{ route('logou') }}"><i class=""></i>Logout</a-->
