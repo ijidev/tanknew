@@ -175,10 +175,10 @@
         </div>
         
         <div class="rights d-flex mb-5">
-            <p class="mx-auto my-5 small">2023 Tanknewmedia-data. All rights reserved.</p>
+            <p class="mx-auto my-5 mb-4 small">2024 Tanknewmedia-data. All rights reserved.</p>
         </div>
         
     </section>
-    @include('_pop')
+    {{-- @include('_pop') --}}
 @endsection
 

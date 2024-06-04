@@ -196,7 +196,7 @@
     </div>
     @php
       $set = \App\Models\Setting::get()->first();
-      $faqs = \App\Models\FAQ::get();
+      $faqs = \App\Models\Faq::get();
     @endphp
     <main class="container">
         <section style="    

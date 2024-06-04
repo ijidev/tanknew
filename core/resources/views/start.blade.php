@@ -108,7 +108,7 @@
         </div>
 
             <div class="rights d-flex">
-                <p class="mx-auto mb-5 small">2023 ImpactMidsouthReviews. All rights reserved.</p>
+                <p class="mx-auto mb-5 small">2024 Tanknewmedia-data. All rights reserved.</p>
             </div>
         </div>
     </div>

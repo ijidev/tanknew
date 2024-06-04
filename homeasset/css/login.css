@@ -21,6 +21,8 @@ main {
       /* position: fixed; */
       background-size: 100%;
       background-position: top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
   }
 
