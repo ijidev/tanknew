@@ -19,7 +19,7 @@
           Your browser does not support the video tag.
           </video>
 
-          <div class="text-center text-bold">
+          <div class="text-center text-bold bg-light" style="border-radius: 10px; padding:10px;">
             <h3>Open and extensible</h3>
             <h6>
               Tanknewmedia offers custom software development services that help innovative companies and 
@@ -173,7 +173,37 @@
           </div>
 
         </div>
-        
+
+        <div class="row justify-content-center p-4">
+          <div class="col-sm-8">
+            <h5>Optimize IT Spend</h5>
+            <ul>
+              <li>Streamline and automate ITOps activities and reduce costs</li>
+              <li>Harness AI to reduce escalations</li>
+              <li>Reduce downtime and mean time to resolve</li>
+            </ul>
+          </div>
+
+          <div class="col-sm-8">
+            <h5>Improve Availability</h5>
+            <ul>
+              <li>Reduce IT alert noise by more than 95%</li>
+              <li>Use advanced AI/ML to detect issues before incidents form</li>
+              <li>Accelerate remediation and restore availability faster</li>
+            </ul>
+          </div>
+            
+          <div class="col-sm-8">
+            <h5>Modernize ITOps using AI</h5>
+            <ul>
+              <li>Evolve from reactive to proactive operations</li>
+              <li>Uncover IT bottlenecks, optimize monitoring and ITSM workflows</li>
+              <li>Automate workflows for DevOps, SRE and Platform Engineering</li>
+            </ul>
+          </div>
+            
+        </div>
+
         <div class="rights d-flex mb-5">
             <p class="mx-auto my-5 mb-4 small">2024 Tanknewmedia-data. All rights reserved.</p>
         </div>

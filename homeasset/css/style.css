@@ -30,7 +30,7 @@
     align-content: center;
     padding-top: 12px;
     flex-wrap: nowrap;
-    gap: 150px;
+    /* gap: 150px; */
     justify-content: space-around;
 }
 
@@ -91,15 +91,15 @@ nav {
 
 .mainNav a img{
     
-    width: 120px;
+    width: 80px;
 }
 
 .mainInfo {
     /* background-color: #ffffff; */
-    background-image: url(../images/img/BG-sidebar.png);
+    background-image: url(../images/img/homebg.webp);
     /* position: fixed; */
-    background-size: 100%;
-    background-position: bottom;
+    background-size: cover;
+    /* background-position: bottom; */
     /* background-attachment: fixed; */
     background-repeat: no-repeat;
     /* /* background-position: 0 0; */

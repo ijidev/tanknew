@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6 mt-4">
 
-        <div class="card text-white">
+        <div class="card">
             <div class="card-header">
                 <h5>Edit Account Info</h5>
             </div>

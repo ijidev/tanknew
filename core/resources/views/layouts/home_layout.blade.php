@@ -158,7 +158,7 @@
                         class="navbar-brand"
                         style="text-decoration: none; color: white"
                         >
-                        <img src="{{ asset('/homeasset/images/img/logo.png') }}" alt="" class="logo" />
+                        <img src="{{ asset('/homeasset/images/img/logo.png') }}" width="50" alt="" class="logo" />
                     </a>
     
                     <!--a href="{{ route('logou') }}"><i class=""></i>Logout</a-->
@@ -208,27 +208,41 @@
                     <div class="home d-flex flex-column align-items-center" id="tab">
                         <a href="{{ route('home') }}" class="d-flex flex-column align-items-center text-decoration-none">
                             <img src="{{ asset('homeasset/images/img/home.png') }}" alt="" style="width: 20px;">
-                            <p class="small">Home</p>
+                            {{-- <p class="small">Home</p> --}}
                         </a>
                     </div>
-                    <div class="starting" id="tab">
+                    {{-- <div class="starting" id="tab">
                         <a href="{{ route('getstarted') }}" class="d-flex flex-column align-items-center text-decoration-none">
-                            <div class="start-img" style="
-                            background: #112; 
-                            border-radius:50%; 
-                            width: 60px;
-                            height: 60px;
-                            text-align: center;
-                            padding-top: 10px;">
-                                <img src="{{ asset('homeasset/images/img/optimize.png') }}" alt="" style="width: 30px; height:30px;">
-                            </div>
+                            <img src="{{ asset('homeasset/images/img/optimize.png') }}" alt="" style="width: 20px;">
                             <p class="small text-center">Starting</p>
                         </a>
+                    </div> --}}
+
+                    <div class="Records d-flex flex-column align-items-center" id="tab">
+                        <a href="{{ route('contact') }}" class="d-flex flex-column align-items-center text-decoration-none">
+                            <img src="{{ asset('homeasset/images/img/support.png') }}" alt="" style="width: 20px;">
+                            <p class="small"></p>
+                        </a>
                     </div>
+
+                    <div class="Records d-flex flex-column align-items-center" id="tab">
+                        <a href="{{ route('getstarted') }}" class="d-flex flex-column align-items-center text-decoration-none">
+                            <img src="{{ asset('homeasset/images/img/optimize.png') }}" alt="" style="width: 20px;">
+                            <p class="small"></p>
+                        </a>
+                    </div>
+
                     <div class="Records d-flex flex-column align-items-center" id="tab">
                         <a href="{{ route('record') }}" class="d-flex flex-column align-items-center text-decoration-none">
                             <img src="{{ asset('homeasset/images/img/history.png') }}" alt="" style="width: 20px;">
-                            <p class="small">Records</p>
+                            {{-- <p class="small">Records</p> --}}
+                        </a>
+                    </div>
+
+                    <div class="Records d-flex flex-column align-items-center" id="tab">
+                        <a href="{{ route('edit') }}" class="d-flex flex-column align-items-center text-decoration-none">
+                            <img src="{{ asset('homeasset/images/img/profile.png') }}" alt="" style="width: 20px;">
+                            {{-- <p class="small">Records</p> --}}
                         </a>
                     </div>
                 </div>
