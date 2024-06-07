@@ -58,7 +58,7 @@
                 <a href="#" id="aboutModalBtn" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/about.png')}}" width="20" alt=""> About Us</a>
             </div>
             <div class="col-6 mt-3">
-                <a href="#" id="certModalBtn" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/cert.png')}}" width="20" alt=""> Cart</a>
+                <a href="#" id="certModalBtn" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/cert.png')}}" width="20" alt=""> Cert</a>
             </div>
             <div class="col-6 mt-3">
                 <a href="#"  id="faqModalBtn" class="btn btn-light text-left" style="width:100% ;"><img src="{{ asset('homeasset/images/img/faq.png')}}" width="20" alt=""> Faq</a>
