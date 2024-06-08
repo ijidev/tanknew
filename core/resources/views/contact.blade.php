@@ -25,9 +25,10 @@
       <h4 class="card-title">Contact Us</h4>
       <p class="card-text">Operation Hour: {{ $set->active_hour . ' to '. $set->close_hour .' daily' }}</p>
       {{-- <br> --}}
-      {{-- <strong>Support@impactmidsouthreviews.com</strong> <br> --}}
+      <strong>Support@Tanknewmedia-data.com</strong> <br>
+      {{-- @dd($set->tg) --}}
        <a href="{{'https://api.whatsapp.com/send?phone='. $set->chat }}" style="width:90%;" class="btn btn-info m-2">Online Support #1</a> <br>
-       <a href="#" disable class="btn btn-info m-2" style="width:90%;">Online Support #2 (Busy)</a> <br>
+       <a href="{{ $set->tg }}" class="btn btn-info m-2" style="width:90%;">Online Support #2</a> <br>
        <a href="#" disabled class="btn btn-info m-2" style="width:90%;">Online Support #3 (Busy)</a>
       
     </div>

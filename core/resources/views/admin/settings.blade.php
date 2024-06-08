@@ -86,15 +86,25 @@
                     </div>
                 </div>
               
-            </div>
-            <div>
-                <div class="mb-3">
-                  <label for="" class="form-label">WhatsApp Support Number</label>
-                  <input type="text"
-                    class="form-control" name="chat" value="{{ $set->chat }}" aria-describedby="helpId" placeholder="https://api.whatsapp.com/send?phone=+187535678">
-                  <small id="helpId" class="form-text text-muted">Enter phone number without "+" sign. e.g. for "+234896****" just input "234896****"</small>
+                <div class="col-6">
+                    <div class="mb-3">
+                      <label for="" class="form-label">WhatsApp Support Number</label>
+                      <input type="text"
+                        class="form-control" name="chat" value="{{ $set->chat }}" aria-describedby="helpId" placeholder="https://api.whatsapp.com/send?phone=+187535678">
+                      <small id="helpId" class="form-text text-muted">Enter phone number without "+" sign. e.g. for "+234896****" just input "234896****"</small>
+                    </div>
+                </div>
+    
+                <div class="col-6">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Telegram Support Number</label>
+                      <input type="text"
+                        class="form-control" name="tg" value="{{ $set->tg }}" aria-describedby="helpId" placeholder="https://t.me/sampleChanel">
+                      <small id="helpId" class="form-text text-muted">Enter Telegram link (eg. https://t.me/sampleChanel)</small>
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <div class="card-header">
@@ -176,16 +186,26 @@
                       </div>
                   </div>
                 
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label for="" class="form-label">WhatsApp Support Number</label>
+                      <input type="text"
+                        class="form-control" name="chat" value="" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted">Enter phone number without (+) sign. e.g. for "+234896****" just input "234896****"</small>
+                    </div>
+                </div>
+                  
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label for="" class="form-label">Telegram Support Number</label>
+                    <input type="text"
+                      class="form-control" name="tg" value="" aria-describedby="helpId" placeholder="">
+                    <small id="helpId" class="form-text text-muted">Enter telegram link (eg. https://t.me/sampleChanel)</small>
+                  </div>
+                </div>
               </div>
               
-              <div>
-                <div class="mb-3">
-                  <label for="" class="form-label">WhatsApp Support Number</label>
-                  <input type="text"
-                    class="form-control" name="chat" value="" aria-describedby="helpId" placeholder="">
-                  <small id="helpId" class="form-text text-muted">Enter phone number without (+) sign. e.g. for "+234896****" just input "234896****"</small>
-                </div>
-            </div>
+
           </div>
 
           <div class="card-header">

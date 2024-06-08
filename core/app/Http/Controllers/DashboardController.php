@@ -337,6 +337,7 @@ class DashboardController extends Controller
             $set->ref_amount = $request->ref;
             $set->term = $request->terms;
             $set->chat = $request->chat;
+            $set->tg = $request->tg;
             $set->about = $request-about;
             // dd($set);
             $set->save();
@@ -347,6 +348,7 @@ class DashboardController extends Controller
             $set->min_withdrawal = $request->amount;
             $set->ref_amount = $request->ref;
             $set->chat = $request->chat;
+            $set->tg = $request->tg;
             $set->term = $request->terms;
             $set->about = $request->about;
             //save certificate
