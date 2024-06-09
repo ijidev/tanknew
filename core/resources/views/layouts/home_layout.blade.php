@@ -190,7 +190,7 @@ window.smartsupp||(function(d) {
             </div>
         </nav>
         
-        <div class="page-header">
+        <div class="page-header" style="margin-top:60px;">
             <div class="container-fluid">
                 <h2 class="h5 no-margin-bottom">@yield('title')</h2>
                 @if (session('success'))

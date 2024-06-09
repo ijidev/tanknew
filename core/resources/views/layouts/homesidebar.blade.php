@@ -21,7 +21,7 @@
         <div class="row align-items-center">
 
             <div class="col-5 text-white">
-                <small class="text-light">Total Profit</small>
+                <small class="text-light">Today's Profit</small>
                 <h6 class="mb-0">${{auth::user()->balance}}</h6>
                 
                 <small class="text-light">Total Asset</small>

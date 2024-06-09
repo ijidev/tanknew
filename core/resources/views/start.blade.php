@@ -3,99 +3,100 @@
 @section('content')
     <div class="main bg-light mt-4" style="background-image: linear-gradient(45deg, rgb(176, 219, 67) 0%, rgb(77, 196, 246) 100%);">
         <div class="container mt-4" >
-            <div class="welcome text-whit">
-                <div class="profile d-flex justify-content-between p-2">
-                    <div class="name d-flex align-items-center align-items-middle">
-                        {{-- <img src="{{ asset('/homeasset/images/profile.png') }}" alt="" width="50" class="profilePic"> --}}
-                        <p class="fw-bold ms-2">Hi, {{ $user->name }}</p>
-                        
+            <div class="row justify-content-center">
+
+                <div class="col-sm-7">
+                    <div class="card mt-4">
+                        <video width="100%" height="240" loop autoplay muted>
+                            <source src="{{ asset('homeasset/videos/homevideo.mp4') }}" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video>
+
                     </div>
-                    {{-- <p class="small">welcome back</p> --}}
                 </div>
-            </div>
-            <video width="100%" height="240" loop autoplay muted>
-                <source src="{{ asset('homeasset/videos/homevideo.mp4') }}" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
 
-            
-            <style>
-                .sliding-text-container {
-                    overflow: hidden;
-                }
                 
-                .sliding-text {
-                    white-space: nowrap;
-                    animation: slide 15s linear infinite;
-                }
-                
-                @keyframes slide {
-                    0% {
-                    transform: translateX(100%);
+                <style>
+                    .sliding-text-container {
+                        overflow: hidden;
                     }
-                    100% {
-                    transform: translateX(-300%);
-                    }
-                }
-            </style>
-
-            <div class="top d-flex justify-content-between">
-                <h6>Start Submission</h6>
-                <p class="num" tet="dark"><span>{{ $user->optimized }}</span>/{{ $user->tier->daily_optimize }}
-                    <input type="range" name="" disabled max="{{$user->tier->daily_optimize}}" value="{{ $user->optimized }}" id="">
-                </p>
-            </div>
-                
-            <div class="text-center mt-4 mb-4">
-                <a href="{{ route('start') }}" class="btn bg-info text-white" style="width:100px; height:100px; padding-top:40px; border-radius:50%; border:solid 2px blue;">Start Now</a>
-            </div>
-                
-            <div class="submission my-2 text-dark" >
-                <div class="digits row justify-content-between text-white my-2">
-                    <div class="wallet money d-flex rounded py-3" style="border-right: solid 1px white; width:49.5%;" >
-                        <!--<i class="las la-wallet icon"></i>-->
-                    <img src="{{ asset('homeasset/images/wallet.png') }}" height="40" width="40">
-                        <div class="ms-5 left">
-                            <div class="d-flex flex-column">
-                                <h5 class="small fw-bolder">Wallet</h5>
-                                <p class="small secondary">Asset Balance</p>
-                            </div>
-                            <div d-flex flex-column>
-                                $<span class="small fw-bolder"> {{ $user->asset }}</span>
-                                {{-- <p class="small fw-bold secondary">USD</p> --}}
-                            </div>
-                        </div>
-                    </div>
                     
-                    <div class="wallet money d-flex rounded py-3" style="border-right: solid 1px white; width:49.5%;" >
-                        <!--<i class="las la-wallet icon"></i>-->
-                    <img src="{{ asset('homeasset/images/img/profit.png') }}" height="40" width="40">
-                        <div class="ms-5 left">
-                            <div class="d-flex flex-column justify-content-between">
-                                <h5 class="small fw-bolder">Profit</h5>
-                                <p class="small secondary">Accumulated Profit</p>
+                    .sliding-text {
+                        white-space: nowrap;
+                        animation: slide 15s linear infinite;
+                    }
+                    
+                    @keyframes slide {
+                        0% {
+                        transform: translateX(100%);
+                        }
+                        100% {
+                        transform: translateX(-300%);
+                        }
+                    }
+                </style>
+                <div class="col-sm-7">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div class="welcome text-whit">
+                                <div class="profile d-flex justify-content-between p-2">
+                                    <div class="name d-flex align-items-center align-items-middle">
+                                        {{-- <img src="{{ asset('/homeasset/images/profile.png') }}" alt="" width="50" class="profilePic"> --}}
+                                        <h4 class="fw-bold ms-2"> {{ $user->name }}</h4>
+                                    </div>
+                                    <h5 class="">{{$user->tier->name}} <img src="{{$user->tier->icon}}" width="50" alt=""> </h5>
+                                </div>
                             </div>
-                            <div d-flex flex-column>
-                                $<span class="small fw-bolder"> {{ $user->balance }}</span>
-                                {{-- <p class="small fw-bold secondary">USD</p> --}}
+
+                            <div class="top d-fle justify-content-between">
+                                <h3>Optimization(<span class="num" tet="dark"><span>{{ $user->optimized }}</span>/{{ $user->tier->daily_optimize }}</span>) </h3>
                             </div>
+                            <input type="range" style="width: -webkit-fill-available;" name="" disabled max="{{$user->tier->daily_optimize}}" value="{{ $user->optimized }}" id="">
+                                
+                            <div class="text-center mt-4 mb-4">
+                                <a href="{{ route('start') }}" class="btn bg-info text-white" style="width:100px; height:100px; padding-top:40px; border-radius:50%;">Start</a>
+                            </div>
+                                
+                            <div class="submission my-2 text-dark" >
+                                <div class="digits row justify-content-between text-white my-2">
+                                    <div class="wallet money d-fle text-center rounded py-3" style="border-right: solid 1px white; width:49.5%;" >
+                                        <!--<i class="las la-wallet icon"></i>-->
+                                    <img src="{{ asset('homeasset/images/wallet.png') }}" height="40" width="40">
+                                    <p class="small pt-2">Wallet </p>
+                                    <span class="small fw-bolder">$ {{ $user->asset }}</span>
+                                    <div class="small secondary">Asset Balance</div>
+                                     
+                                    </div>
+                                    
+                                    <div class="wallet money d-fle rounded text-center py-3" style="border-right: solid 1px white; width:49.5%;" >
+                                        <!--<i class="las la-wallet icon"></i>-->
+                                        <img src="{{ asset('homeasset/images/img/profit.png') }}" height="40" width="40">
+                                        <p class="small fw-bolder pt-2">Profit</p>
+                                        <span class="small fw-bolder">$ {{ $user->balance }}</span>
+                                        <p class="small secondary">Today's Profit</p>
+                                        
+                                    </div>
+                                </div>
+                                {{-- <section class="infos">
+                                    <div class="container">
+                                        <div class="mainInfos">
+                                            @foreach($products as $product)
+                                                <div class="info">
+                                                    <img src="{{ $product->img }}" width="60" height="60" class="rounded">
+                                                    <p class="small">{{ $product->price.' usdt' }}</p>
+                                                </div>
+                                            @endforeach
+                                            
+                                        </div>
+                                    </div>
+                                </section> --}}
+                                
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
-                {{-- <section class="infos">
-                    <div class="container">
-                        <div class="mainInfos">
-                            @foreach($products as $product)
-                                <div class="info">
-                                    <img src="{{ $product->img }}" width="60" height="60" class="rounded">
-                                    <p class="small">{{ $product->price.' usdt' }}</p>
-                                </div>
-                            @endforeach
-                            
-                        </div>
-                    </div>
-                </section> --}}
-                
             </div>
 
             <div class="notes small p-3 rounded mt-5">

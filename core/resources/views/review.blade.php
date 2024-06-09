@@ -60,7 +60,7 @@
 
 
 
-            <div class="card" style="background:blue;">
+            <div class="card bg-info">
                 <div class="card-body">
                     <div class="container">
                         <span id="rateMe1"></span>
@@ -134,14 +134,24 @@
 
                         <div class="form-group mb-3 text-white">
                             <h5 class="text-light mt-4">Describe your Review (optional)</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="" value="Excellent! I personally used it too, very Applicable"/>
+                                <label class="form-check-label" for="html"> Excellent! I personally used it too, very Applicable </label>
+                            </div>
                             
-                            <input type="radio" name="rating" value="Excellent! I personally used it too, very Applicable">
-                            <label for="html">Excellent! I personally used it too, very Applicable</label><br>
-                            <input type="radio" name="rating" value="Normal! Not used often but know the Product">
-                            <label for="css">Normal! Not used often but know the Product</label><br>
-                            <input type="radio" name="rating" value="Opps! Not used or heard it before">
-                            <label for="javascript">Opps! Not used or heard it before</label>
-                        </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="" value="Normal! Not used often but know the Product"/>
+                                <label class="form-check-label" for="htmll"> Normal! Not used often but know the Product </label>
+                            </div>
+                            
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="rating" id="" value="Opps! Not used or heard it before"/>
+                                <label class="form-check-label" for="hhtml"> Opps! Not used or heard it before </label>
+                            </div>
+                            
+
+
+                            </div>
 
                         <div class="form-group mb-4">
                             {{-- <label for="comment">Comment</label> --}}
