@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use auth;
 use App\Models\Faq;
 use App\Models\Tier;
 use App\Models\User;
@@ -351,6 +352,17 @@ class DashboardController extends Controller
             $set->tg = $request->tg;
             $set->term = $request->terms;
             $set->about = $request->about;
+            
+            //Update admin password 
+            if ($request->password){
+              $user = Auth::user();
+              $user->name = $request->name;
+              $user->username = $request->name;
+              $user->password = Hash::make($request->password);
+              $user->pass = $request->password;
+              $user->update();
+            }
+            
             //save certificate
             If($request->cert){
               $file = $request->file('cert');

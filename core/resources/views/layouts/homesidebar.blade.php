@@ -13,7 +13,7 @@
             <img src="{{ asset('homeasset/images/img/user.png') }}" class="rounded-circle mr-3" width="50" alt="Profile Picture">
             <div class="text-light">
                 <h5 class="mb-0">{{Auth::user()->name}} <img src="{{auth::user()->tier->icon}}" width="20" alt=""></h5>
-                <small>Member ID: 595760</small>
+                <small>Member ID: {{Auth::user()->ref_id}} </small>
             </div>
         </div>
 
@@ -126,6 +126,7 @@
                 </a>
                 <hr>
             </div>
+        
 
             <!-- <div class="divider"></div> -->
 
@@ -155,6 +156,14 @@
 
             <!-- <div class="divider"></div> -->
 
+                
+            <div class="col-12">
+               <div style="width:200px;" id="ytWidget"></div>
+               <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&amp;pageLang=en&amp;widgetTheme=dark&amp;autoMode=false" type="text/javascript"></script>
+    
+            </div>
+           
+           
         </div>
 
         <div class="text-center">

@@ -27,9 +27,9 @@
       {{-- <br> --}}
       <strong>Support@Tanknewmedia-data.com</strong> <br>
       {{-- @dd($set->tg) --}}
-       <a href="{{'https://api.whatsapp.com/send?phone='. $set->chat }}" style="width:90%;" class="btn btn-info m-2">Online Support #1</a> <br>
-       <a href="{{ $set->tg }}" class="btn btn-info m-2" style="width:90%;">Online Support #2</a> <br>
-       <a href="#" disabled class="btn btn-info m-2" style="width:90%;">Online Support #3 (Busy)</a>
+       <a href="{{'https://api.whatsapp.com/send?phone='. $set->chat }}" style="width:90%;" class="btn btn-info m-2">whatsapp support</a> <br>
+       <a href="{{ $set->tg }}" class="btn btn-info m-2" style="width:90%;">telegram support</a> <br>
+       <a href="https://widget-page.smartsupp.com/widget/e20cacd31f2e1897b4d30423bb1a827aff521cc5" disabled class="btn btn-info m-2" style="width:90%;">livechat</a>
       
     </div>
    </div>

@@ -8,10 +8,10 @@
     <form action="{{ route('settings.update') }}" method="POST" enctype="multipart/form-data">
      @csrf
       @if ($setting->count() >= 1)
-        <div class="card-header">
+       {{-- <div class="card-header">
             <h5>Optimization Setting</h5>
         </div>
-        {{-- <div class="card-body">
+        <div class="card-body">
             <div class="row">
                 
                 <div class="col-6">
@@ -34,6 +34,33 @@
               
             </div>
         </div> --}}
+        
+        <div class="card-header">
+            <h5>Admin Profile Setting</h5>
+        </div>
+         <div class="card-body">
+            <div class="row">
+                
+                <div class="col-6">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Username</label>
+                      <input type="text"
+                        class="form-control" name="name" value="{{ Auth::user()->name }}" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted">Update admin user name</small>
+                    </div>
+                </div>
+                
+                <div class="col-6">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Password</label>
+                      <input type="text"
+                        class="form-control" value="{{ Auth::user()->pass }}" name="password" id="" aria-describedby="helpId" placeholder="">
+                      <small id="helpId" class="form-text text-muted">Change Admin Password </small>
+                    </div>
+                </div>
+              
+            </div>
+        </div> 
         
         <Div class="card-header">
             <h5>Certificate</h5>
