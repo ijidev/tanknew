@@ -1,8 +1,8 @@
  
 @extends('layouts.home_layout')
 @section('content')
-    <div class="main bg-light mt-4">
-        <div class="container mt-4">
+    <div class="main bg-light mt-4" style="background-image: linear-gradient(45deg, rgb(176, 219, 67) 0%, rgb(77, 196, 246) 100%);">
+        <div class="container mt-4" >
             <div class="welcome text-whit">
                 <div class="profile d-flex justify-content-between p-2">
                     <div class="name d-flex align-items-center align-items-middle">
@@ -47,7 +47,7 @@
             </div>
                 
             <div class="text-center mt-4 mb-4">
-                <a href="{{ route('start') }}" class="btn " style="width:50%; border:solid 2px blue;">Start Now</a>
+                <a href="{{ route('start') }}" class="btn bg-info text-white" style="width:100px; height:100px; padding-top:40px; border-radius:50%; border:solid 2px blue;">Start Now</a>
             </div>
                 
             <div class="submission my-2 text-dark" >
@@ -61,23 +61,23 @@
                                 <p class="small secondary">Asset Balance</p>
                             </div>
                             <div d-flex flex-column>
-                                <span class="small fw-bolder">{{ $user->asset }}</span>
-                                <p class="small fw-bold secondary">USDT</p>
+                                $<span class="small fw-bolder"> {{ $user->asset }}</span>
+                                {{-- <p class="small fw-bold secondary">USD</p> --}}
                             </div>
                         </div>
                     </div>
                     
                     <div class="wallet money d-flex rounded py-3" style="border-right: solid 1px white; width:49.5%;" >
                         <!--<i class="las la-wallet icon"></i>-->
-                    <img src="{{ asset('homeasset/images/usdt.png') }}" height="40" width="40">
+                    <img src="{{ asset('homeasset/images/img/profit.png') }}" height="40" width="40">
                         <div class="ms-5 left">
                             <div class="d-flex flex-column justify-content-between">
                                 <h5 class="small fw-bolder">Profit</h5>
                                 <p class="small secondary">Accumulated Profit</p>
                             </div>
                             <div d-flex flex-column>
-                                <span class="small fw-bolder">{{ $user->balance }}</span>
-                                <p class="small fw-bold secondary">USDT</p>
+                                $<span class="small fw-bolder"> {{ $user->balance }}</span>
+                                {{-- <p class="small fw-bold secondary">USD</p> --}}
                             </div>
                         </div>
                     </div>
