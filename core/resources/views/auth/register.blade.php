@@ -125,6 +125,7 @@
                                     name="ref_code"
                                     class=" customInput @error('ref_code') is-invalid @enderror"
                                     placeholder="invite Code"
+                                    required
                                 />
                                 @error('ref_code')
                                     <span class="invalid-feedback" role="alert">
