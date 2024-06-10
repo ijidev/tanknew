@@ -31,7 +31,7 @@
     padding-top: 12px;
     flex-wrap: nowrap;
     /* gap: 150px; */
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .starting { 

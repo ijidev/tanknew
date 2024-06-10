@@ -10,41 +10,42 @@
             @php
               $user = Auth::user();  
             @endphp
-            {{-- <h3>My Referal Code: {{ $user->ref_id }}</h3>
-            <h6>
-              Tanknewmedia offers custom software development services that help innovative companies and 
-              startups design and build digital products with AI, mobile, and web technologies.
-            </h6> --}}
+           
 
             <div class="p-2 mb-4 mt-4">
                         
-                  {{-- <span class="input-group-text" id="my-addo">Member-ID</span>
-                  <input class="form-control" type="text" id="memberId" disabled value="{{' '. $user->ref_id }}"  aria-describedby="my-addon"> --}}
-                  {{-- <div class="input-group-append"> --}}
+           
                     <h3 style="margin-top: 20%; border-radius:5px; padding:5px;" class="bg-light">
-                      Membership ID: <span class="text-yelllow">{{ $user->ref_id }}</span>
+                      <p id="userRefId">Your User Ref ID: <span class="text-yellow" id="refIdText">{{$user->ref_id}}</span></p>
+                      <!-- Button to trigger the copy function -->
+                      {{-- <button onclick="copyRefId()">Copy User Ref ID</button> --}}
                     </h3>
-                      <button class="btn btn-info text-white" onclick="myFunction()"><i class="las la-clipboard" aria-hidden="true"></i> Copy Code</button>
+                      <button class="btn btn-info text-white" onclick="copyRefId()"><i class="las la-clipboard" aria-hidden="true"></i> Copy Code</button>
                   {{-- </div> --}}
               </div>
           </div>
           
           <script>
-            function myFunction() {
-              // Get the text field
-              var copyText = document.getElementById("memberId");
-            
-              // Select the text field
-              copyText.select();
-              copyText.setSelectionRange(0, 99999); // For mobile devices
-            
-                // Copy the text inside the text field
-              navigator.clipboard.writeText(copyText.value);
-            
-              // Alert the copied text
-              alert("Member ID Copied Successfully : " + copyText.value);
+            function copyRefId() {
+                // Select the text to copy
+                var refIdText = document.getElementById("refIdText");
+                var range = document.createRange();
+                range.selectNode(refIdText);
+                window.getSelection().removeAllRanges(); // Clear previous selections
+                window.getSelection().addRange(range);
+    
+                // Execute the copy command
+                try {
+                    document.execCommand("copy");
+                    alert("User Ref ID copied to clipboard: " + refIdText.textContent);
+                } catch (error) {
+                    console.error("Copy failed: ", error);
+                }
+    
+                // Clear the selection
+                window.getSelection().removeAllRanges();
             }
-          </script>
+        </script>
           <style>
               .tooltip {
                 position: relative;
