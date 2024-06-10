@@ -62,18 +62,18 @@
                                     <div class="wallet money d-fle text-center rounded py-3" style="border-right: solid 1px white; width:49.5%;" >
                                         <!--<i class="las la-wallet icon"></i>-->
                                     <img src="{{ asset('homeasset/images/wallet.png') }}" height="40" width="40">
-                                    <p class="small pt-2">Wallet </p>
-                                    <span class="small fw-bolder">$ {{ $user->asset }}</span>
-                                    <div class="small secondary">Asset Balance</div>
+                                    <p class="small pt-2 pb-1 mb-0">Asset Ballance </p>
+                                    <h6 class=" fw-bolder">${{ $user->asset }}</h6>
+                                    <div class="small secondary">Daily profit will be added to Asset</div>
                                      
                                     </div>
                                     
                                     <div class="wallet money d-fle rounded text-center py-3" style="border-right: solid 1px white; width:49.5%;" >
                                         <!--<i class="las la-wallet icon"></i>-->
                                         <img src="{{ asset('homeasset/images/img/profit.png') }}" height="40" width="40">
-                                        <p class="small fw-bolder pt-2">Profit</p>
-                                        <span class="small fw-bolder">$ {{ $user->balance }}</span>
-                                        <p class="small secondary">Today's Profit</p>
+                                        <p class="small fw-bolder pt-2 pb-1 mb-0">Today's Profit</p>
+                                        <h6 class=" fw-bolder">${{ $user->balance }}</h6>
+                                        <p class="small secondary">Today's Profit to be reset daily</p>
                                         
                                     </div>
                                 </div>

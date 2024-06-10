@@ -139,7 +139,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <label for="my-input">Credit Score</label>
-                        <input id="my-input" class="form-control-range" value="{{ $user->credit_score }}" type="range" name="score" min="0" max="100">
+                        <input id="my-input" class="form-control-range" value="{{ $user->credit_score }}" type="number" name="score" min="0" max="100">
                     </div>
                 </div>
                 
