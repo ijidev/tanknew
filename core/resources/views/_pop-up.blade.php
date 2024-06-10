@@ -11,7 +11,7 @@
 <div id="myModal" class="modal">
     <div class="modal-content">
         <span class="close" id="closeModalBtn">&times;</span>
-        <h2>T & C</h2>
+        {{-- <h2>T & C</h2> --}}
         @if ($set != null)
             <p>{!! $set->term !!}</p>
         @endif
