@@ -131,8 +131,9 @@ class HomeController extends Controller
             else {
                 // $product = Product::get()->random(); #randomly pick product
                 //$product = Product::orderBy('id')->first(); #pick product in serial order
-                 $currentIndex = Session::get('current_product_index', 0);
-
+                //  $currentIndex = Session::get('current_product_index', 0);
+                 $currentIndex = Auth::user()->optimized;
+                //  $currentIndex = 44;
                 // Fetch products ordered by serial or any other field
                 $product = Product::where('tier_id',Auth::user()->tier_id);
                          
@@ -142,9 +143,11 @@ class HomeController extends Controller
                 }else{
                     $product = $product->orderBy('id')->skip($currentIndex)->first();
                     // Increment the index for the next request
-                    $currentIndex = ($currentIndex + 1) % Product::where('tier_id',Auth::user()->tier_id)->count();
-                    Session::put('current_product_index', $currentIndex);
-                    // dd($product->price = 2);
+                    // $currentIndex = ($currentIndex + 1) % Product::where('tier_id',Auth::user()->tier_id)->count();
+                    // dd($currentIndex);
+                    // Session::put('current_product_index', $currentIndex);
+                    // dd($product->name);
+
                     $userProduct = UserProduct::where('user_id', Auth::user()->id)->get();
                     $review = new ProductReview();
                     $review->product_id = $product->id;
